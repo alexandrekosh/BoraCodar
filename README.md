@@ -5,4 +5,4 @@
 
 | # | NAME | DEPLOY |
 |---|------|---------|
-| 15 | [Pricing Table](./15) | [<img src="./15/.github/preview.jpg" alt="pricing-table">]()
+| 15 | [Pricing Table](./15) | [<img width="600px" src="./15/.github/preview.jpg" alt="pricing-table">]()
