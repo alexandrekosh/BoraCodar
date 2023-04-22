@@ -28,10 +28,14 @@ html, body {
     background: var(--color-gray-50);
 }
 
+body {
+    height: 100vh;
+}
+
 .princing-table {
     display: grid;
     gap: 24px;
-    padding: 24px 0;
+    padding: 24px;
 }
 
 section {
@@ -249,4 +253,49 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .princing-table {
+        grid-template-columns: 320px 320px 320px;
+    }
+
+    .alert {
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .alert {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    position: fixed;
+
+    background: var(--color-purple-100);
+    color: var(--color-white);
+
+    border: none;
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 12px 16px;
+    margin: 10px;
+
+    font-size: 14px;
 }
