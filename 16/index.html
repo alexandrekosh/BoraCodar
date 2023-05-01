@@ -1,0 +1,194 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio 16</title>
+ </head>
+ <body>
+    <header class="container">  
+        <nav class="flex aling-items">
+            <h2>Meus contatos</h2>
+
+            <ul class="flex aling-items">
+                <li>
+                    <ion-icon name="add"></ion-icon>
+                </li>
+                
+                <li>
+                    <ion-icon name="pencil"></ion-icon>
+                </li>
+                
+                <li>
+                    <ion-icon name="trash"></ion-icon>
+                </li>
+            </ul>
+        </nav>
+
+        <form>
+            <div class="input-wrapper flex aling-items">
+                <label for="filter" class="sr-only">Busque por nome ou por dados de contato</label>
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" id="filter" placeholder="Busque por nome ou por dados de contato">
+            </div>
+        </form>
+    </header>
+
+    <section class="contacts container">
+        
+        <div class="list-wrapper flex">
+            <div class="letter purple flex aling-items">A</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+                        <div class="contact">
+                            <h3>Abraão</h3>
+                            <p>(11) 98932-3746</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter green flex aling-items">B</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="">
+                        <div class="contact">
+                            <h3>Beatriz</h3>
+                            <p>(11) 90034-3026</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter pink flex aling-items">C</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="">
+                        <div class="contact">
+                            <h3>Caio</h3>
+                            <p>(11) 98341-5252</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter blue flex aling-items">D</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="">
+                        <div class="contact">
+                            <h3>Dani</h3>
+                            <p>(11) 98263-2981</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter yellow flex aling-items">E</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="">
+                        <div class="contact">
+                            <h3>Ednaldo</h3>
+                            <p>(11) 98435-8621</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter red flex aling-items">F</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                        <div class="contact">
+                            <h3>Fabio</h3>
+                            <p>(11) 90034-3026</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter orange flex aling-items">G</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+                        <div class="contact">
+                            <h3>Gabriela</h3>
+                            <p>(11) 98341-5252</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter lilas flex aling-items">H</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="">
+                        <div class="contact">
+                            <h3>Heitor</h3>
+                            <p>(11) 98263-2981</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter yellow flex aling-items">I</div>
+
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="">
+                        <div class="contact">
+                            <h3>Isabela</h3>
+                            <p>(11) 98435-8621</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+ </body>
+ </html>

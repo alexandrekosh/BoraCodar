@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, input {
+    font-family: 'Roboto';
+}
+
+html, body {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #1A1924;
+    color: #E1E1E6;
+}
+
+header {
+    background-color: #16151E;
+}
+
+.flex {
+    display: flex;
+}
+
+.aling-items {
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+
+nav ul {
+    gap: 16px;
+}
+
+nav ul li {
+    font-size: 24px;
+}
+
+form {
+    margin-top: 24px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.input-wrapper {
+    gap: 10px;
+
+    background: #24243D;
+    border-radius: 5px;
+    padding: 16px 24px;
+}
+
+.input-wrapper input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    width: 100%;
+
+    font-size: 12px;
+    line-height: 14px;
+    color: #E1E1E6;
+}
+
+.input-wrapper ion-icon {
+    font-size: 16px;
+}
+
+.input-wrapper input::placeholder {
+    color: #E1E1E6;
+}
+
+.input-wrapper:focus-within {
+    outline: 1px solid white;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.contacts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contacts::-webkit-scrollbar-thumb {
+    background-color: #282843;
+    border-radius: 999px;
+}
+
+.letter {
+    width: 40px;
+    height: 40px;
+
+    justify-content: center;
+
+    margin-right: 52px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+    line-height: 19px;
+
+    background-color: var(--color);
+}
+
+.purple {
+    --color: #633BBC;
+}
+
+.green {
+    --color: #07847E;
+}
+
+.pink {
+    --color: #9A00B3;
+}
+
+.blue {
+    --color: #0088B3;
+}
+
+.yellow {
+    --color: #B38C00;
+}
+
+.orange {
+    --color: #fb8500;
+}
+
+.red {
+    --color: #e63946;
+} 
+
+.gray {
+    --color: #edede9;
+}
+
+.lilas {
+    --color: #5e548e;
+}
+
+.person {
+    gap: 16px;
+}
+
+.person img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.person p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #8C8CBA;
+
+    margin-top: 4px;
+}
+
+.list-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+header nav,
+header form,
+.list-wrapper {
+    max-width: 350px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.contacts .list-wrapper ul li:hover {
+    scale: 1.2;
+    transition: scale 400ms;
+}
